@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Awesome Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">  
+    <link rel = 'stylesheet' href='./css/style.css'>
+</head>
+<body>
+    <div class='site-main-wrapper'>
+        <button class='hamberger'>
+            <div class= 'container-hamberger'>
+                <div class='strip1'></div>
+                <div class='strip2'></div>
+                <div class='strip3'></div>
+            </div>
+        </button>
+        <div class='mobile-nav'>
+            <!-- <div class='times-container'>
+                    <div class='cross-1'></div>
+                    <div class='cross-2'></div>
+                </div> -->
+                <button class='times'><img src='./Images/times-logo2.png' alt='times-logo' /></button>
+            <ul>
+                <li><a href='#'>Home</a></li>
+                <li><a href='#'>About</a></li>
+                <li><a href='#'>Skills</a></li>
+                <li><a href='#'>Projects</a></li>
+                <!-- <li><a href='#'>Blog</a></li> -->
+            </ul>
+        </div>
+        <header>
+            <div class= 'container'>
+                <nav id='main-nav' class='flex items-center justify-between'>
+                    <div class='left flex items-center'>
+                        <div class='branding'>
+                            <img src='./Images/logo.svg' alt='logo' /> 
+                        </div>
+                        <div>
+                            <a href='#'>Home</a>
+                            <a href='#about'>About</a>
+                            <a href='#skills'>Skills</a>
+                            <a href='#projects'>Projects</a>
+                            <!-- <a href='#blog'>Blog</a> -->
+        
+                        </div>
+                    </div>
+                    <div class='right'>
+                        <a href='#contact'class='btn btn-primary'>Contact Me</a>
+                    </div>
+                </nav>
+                <div class='hero flex items-center justify-between'>
+                    <div class='left flex-1 flex justify-center'>
+                        <img src='Images/sri.png' alt='sri'  />
+                    </div>
+                    <div class='right flex-1'>
+                        <h6>T Sriya</h6>
+                        <h1>I'm a Front-End<span> Developer</span></h1>
+                        <p>Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live.</p>
+                        <div class='cv-download'>
+                            <a href='./Images/cv-download.pdf' download class='btn btn-primary'>DOWNLOAD CV</a>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            
+        </header>
+        <section id='about' class='about'>
+            <div class='container flex items-center'>
+                <div class='flex-1 '>
+                    <img class='about-me-img' src='Images/srmg.png' alt='image3'>
+    
+                </div>
+                <div class='flex-1'>
+                    <h1>About<span> Me</span></h1>
+                    <h3>Hello! I'm Sriya.</h3>
+                    <p>Learn from yesterday, live for today, hope for tomorrow. The important thing is not to stop questioning. It is not enough that we build products that function, that are understandable and usable, we also need to build products that bring joy and excitement, pleasure and fun, and, yes, beauty to people’s lives.</p>
+                    <div class='social'>
+                        <a href='https://github.com/sriyaT'><img src='Images/github-logo.png' /></a>
+                        <a href='https://twitter.com/t_sriya94'><img src='Images/twitter-logo.png' /></a>
+                        <a href='https://www.linkedin.com/in/t-sriya-b4234510a'><img src='Images/linkedin-icon-19.png' /></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id='skills' class='services'>
+            <div class='container'>
+                <h1 class='section-heading'><span>My</span> Skills</h1>
+                <p>Where do new ideas come from? The answer is simple: differences. Creativity comes from unlikely juxtapositions.</p>
+                <div class='card-wrapper'>
+                    <div class='card'>
+                        <img src='Images/html5-logo.png' alt='html5-logo'>
+                        <h2>HTML5</h2>
+                        <p>Hypertext Markup Language (HTML) is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript, ASP and PHP. ... HTML elements are the building blocks of HTML pages.</p>
+                    </div>
+                    <div class='card'>
+                        <img src='Images/css3-logo.png' alt='html5-logo'>
+                        <h2>CSS3</h2>
+                        <p>CSS3 is the latest version of the CSS specification. ... New features in CSS3 include support for additional selectors, drop shadows, rounded corners, updated layout features, animation, transparency, and much more. CSS3 is distinct from HTML5.</p>
+                    </div>
+                    <div class='card'>
+                        <img src='Images/javascript-logo.png' alt='html5-logo'>
+                        <h2>JavaScript</h2>
+                        <p>JS, is a programming language that conforms to the ECMAScript specification. JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.</p>
+                    </div>
+                    <div class='card grid-row-start'>
+                        <img src='Images/react-logo.png' alt='html5-logo'>
+                        <h2>ReactJS </h2>
+                        <p>React (also known as React. js or ReactJS) is an open-source JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies. React can be used as a base in the development of single-page or mobile applications.</p>
+                    </div>
+                    <div class='card grid-row-start-sec'>
+                        <img src='Images/redux-logo1.png' alt='html5-logo'>
+                        <h2>Redux</h2>
+                        <p>Redux is a predictable state container for JavaScript apps. Redux makes it easy to manage the state of your application. Another way of looking at this - it helps you manage the data you display and how you respond to user actions.</p>
+                    </div>  
+                </div>
+            </div>
+        </section>
+        <section id='projects'class='projects'>
+            <h1>My <span> Projects</span></h1>
+            <p>Website without visitors is like a ship lost in the horizon.</p>
+            <a href='./Images/cv-download.pdf' download class='btn btn-primary'>DOWNLOAD CV</a>
+        </section>
+        <section class='project-list'>
+            <div class='container'>
+                <h3>Burger Ecommerce Application : <a href='https://sriyat.github.io/burger-app/' target="_blank">https://sriyat.github.io/burger-app/</a></h3>
+                <h3>State Management Application : <a href='' target="_blank"></a></h3>
+                <h3>Expense Tracker Application :  <a href='https://sriyat.github.io/expense-tracker-react/' target="_blank">https://sriyat.github.io/expense-tracker-react/</a></h3>
+                <h3>Carousel Application :  <a href='https://sriyat.github.io/Carousel/' target="_blank">https://sriyat.github.io/Carousel/</a></h3>
+                <h3>Move Container Application :  <a href='https://sriyat.github.io/move-container/' target="_blank">https://sriyat.github.io/move-container/</a></h3>
+                <h3>Movie DB Application :  <a href='https://sriyat.github.io/movie-db-react/' target="_blank">https://sriyat.github.io/movie-db-react/</a></h3>
+                <h3>Blog Application :  <a href='https://sriyat.github.io/blog/' target="_blank">https://sriyat.github.io/blog/</a></h3>
+                <h3>Tip Calculator Application :  <a href='https://sriyat.github.io/TipCalculator/' target="_blank">https://sriyat.github.io/TipCalculator/</a></h3>
+                <h3>Calculator Application :  <a href='https://sriyat.github.io/Calculator/' target="_blank">https://sriyat.github.io/Calculator/</a></h3>
+                <h3>Wunderlist Application :  <a href='https://sriyat.github.io/Wunderlist/' target="_blank">https://sriyat.github.io/Wunderlist/</a></h3>
+            </div>
+        </section>
+        <!-- <section id='blog' class='blog'>
+            <div class='container'>
+                <h1 class="section-heading"><span>My</span> Blog</h1>
+                <p>Design is thinking made visual.</p>
+                <div class='card-wrapper'>
+                    <div class='card'>
+                        <div class="img-wrapper">
+                            <img src="Images/article-ph-1.png" alt='blog-image'>
+                        </div>
+                        <div class='card-content'>
+                            <a href='#'>
+                            <h1> Need To Give Blog Title</h1> 
+                        </a>
+                        <span>July 14, 2020</span>
+                        <p> Blog paragraph : dummy : If you’re going to try, go all the way. There is no other feeling like that.Twitter Logo You will be alone with the gods, and the nights will flame with fire. You will ride life straight to perfect laughter. It’s the only good fight there is. </p>
+                        <a class='read-more'href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <section id='contact' class ='contact'>
+            <div class='Container'>
+                <div class='contact-heading'>
+                    <h1 class='section-heading'><span>Contact</span> Me</h1>
+                    <p>Each contact with a human being is so rare, so precious, one should preserve it.</p>
+                </div>
+                
+                <div class='card-wrapper'>
+                    <div class="card">
+                        <img src='/Images/mobile-logo.png' alt='mobile'> 
+                        <h2>Call Me On</h2>
+                        <h6>+918088728655</h6>
+                    </div>
+                    <div class="card">
+                        <img src='/Images/email.png' alt='email'> 
+                        <h2>Email Me At</h2>
+                        <h6>tsriya6@gmail.com</h6>
+                    </div>
+                    <div class="card">
+                        <img src='/Images/twitter-logo.png' alt='twitter'> 
+                        <h2>Tweet Me At</h2>
+                        <h6>https://twitter.com/t_sriya94</h6>
+                    </div>
+                    <div class="card">
+                        <img src='/Images/github-logo.png' alt='github'> 
+                        <h2>Visit My Github Account</h2>
+                        <h6>https://github.com/sriyaT</h6>
+                    </div>
+                    <div class="card">
+                        <img src='/Images/linkedin-icon-19.png' alt='linkedin'> 
+                        <h2>Available on linkedin</h2>
+                        <h6>https://www.linkedin.com/in/t-sriya-b4234510a</h6>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+    </body>
+    </div>
+    
+</body>
+<script src="./js/app.js"></script>
+<!-- Website without visitors is like a ship lost in the horizon. -->
+</html>
