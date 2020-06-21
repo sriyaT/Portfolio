@@ -6,6 +6,7 @@
     --ternary:#898989;
     --light: #F2F2F2;
     --secondary:#070606;
+
 }
 body{
     /* height:5000px; */
@@ -13,6 +14,7 @@ body{
 }
 html{
     scroll-behavior: smooth;
+    font-size: 16px;
 }
 *{
     padding:0;
@@ -24,6 +26,9 @@ header{
     background-color: var(--dark);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 87%,0 100%);
 }
+.branding img{
+    width: 192px;
+}
 .container{
     max-width: 1152px;
     padding: 0 15px;
@@ -32,27 +37,6 @@ header{
 .container a{
     text-decoration: none;
 }
-@media (min-width: 576px){
-    .container{
-        max-width: 540px;
-    }
-}
-@media (min-width: 768px){
-    .container{
-        max-width: 720px;
-    }
-}
-@media (min-width: 992px){
-    .container{
-        max-width: 960px;
-    }
-}
-@media (min-width: 1200px){
-    .container{
-        max-width: 1152px;
-    }
-}
-
 header nav .left a{
     color: var(--pure);
     text-decoration: none;
@@ -68,6 +52,9 @@ header nav .branding{
 }
 header nav .left a:hover{
     color: var(--primary);
+}
+header right a{
+    display: block;
 }
 .hero {
     padding:3rem 0;
@@ -334,10 +321,12 @@ section.blog .card-wrapper .card .card-content a:hover{
     border: none;
     outline: none;
     cursor: pointer;
+    display: none;
 } 
 .hamberger .container-hamberger{
     
-    height:16px;
+    height:fit-content;
+    width: fit-content;
     background: var(--dark);
     position: absolute;
     top:40px;
@@ -348,59 +337,74 @@ section.blog .card-wrapper .card .card-content a:hover{
     outline: none;
     cursor: pointer;
 }
-.hamberger .container-hamberger .strip1{
+.hamberger .container-hamberger .stripe{
     background: var(--pure);
     width:40px;
     height:6px;
     margin-bottom:7px;
 }
-.hamberger .container-hamberger .strip2{
-    background: var(--pure);
-    width:40px;
-    height:6px;
-    margin-bottom:7px;
-}
-.hamberger .container-hamberger .strip3{
-    background: var(--pure);
-    width:40px;
-    height:6px;
-    margin-bottom:7px;
-}
+
 .mobile-nav{
     position: fixed;
     top:0;
     left:0;
     z-index:1001;
-    background:var(--light);
+    background: var( --pure);
     width:100%;
     height:100%;
     padding:2rem;
     padding-top:5rem;
     transform: translateX(-100%);
     transition: all .5s ease-in-out;
+    border: 0.2rem solid var(--dark) ;
+    
+    
 }
 .open{
     transform:translateX(0);
 }
 .times{
-    position: fixed;
     border: none;
     outline: none;
-    top:2rem;
-    left:75rem;
     background: none;
     cursor:pointer;
+    width: 98%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -42px;
+    margin-left: -3rem;
 }
 .times img{
     width:20px;
 }
 .mobile-nav ul{
     list-style-type: none;
+    width:100%;
+    height:100%;
+    background-image: linear-gradient(to right, #0E5B5F,  var(--primary));
+    padding-left:4rem;
+    padding-top: 5rem;;
+    clip-path: polygon(0 0, 100% 0, 85% 70%,100% 100% ,0 100%);
+    border-radius: 1.8%;
+}
+header .tab-list{
+    display: block;
+}
+
+.mobile-nav ul li{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 6rem;
+    color: var(--secondary);
 }
 .mobile-nav ul li a{
     color:var(--secondary);
     text-decoration: none;
     font-size:2rem;
+}
+.mobile-nav ul li a:hover{
+    color: var(--light);
+    transition: color .3s ease;
 }
 /* .times .times-container{
     height:16px;
@@ -431,12 +435,10 @@ section.blog .card-wrapper .card .card-content a:hover{
 section.contact .Container .card-wrapper{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-gap:3rem;
    
 }
 section.contact .Container .card-wrapper .card{
     text-align: center;
-    padding:2rem;
     
 }
 section.contact .Container .card-wrapper .card img{
@@ -460,7 +462,7 @@ section.contact .Container .card-wrapper .card h6{
 section.contact .Container .contact-heading {
     height:7rem;
 }
-@media(max-width:1024px){
+/* @media(max-width:1024px){
     header #main-nav{   
         display: none;
     }
@@ -476,7 +478,82 @@ section.contact .Container .contact-heading {
     header{
         clip-path: polygon(0 0, 100% 0, 100% 100%, 27% 89%,0 100%);
     }
+} */
+
+@media (max-width: 420px){
+    .hamberger{
+        display: block;
+    }
 }
 
-
+@media (max-width: 845px){
+    section.project-list .container{
+        grid-template-columns: repeat(1, 70%);
+        padding-left:5rem;
+    }
+    .header{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 90%,0 100%);
+    }
+    .hamberger{
+        display: block;
+    }
+    header .tab-list{
+        display: none;
+    }
+    header .right a{
+        display: none;;
+    }
+    /* .hero .left img{
+        width:60%;
+    } */
+    html{
+        font-size: 12px;
+    }
+    section.contact .Container .card-wrapper{
+        grid-template-columns: repeat(1, 100px);
+        justify-content: center;
+        grid-gap: 2rem;
+    }
+    section.about .container{
+        padding: 0 50px;
+    }
+    section.services .card-wrapper{
+        grid-template-columns: repeat(1, 70%);
+        justify-content: center;
+    }
+    .grid-row-start-sec{
+        grid-column-start: auto;
+    }
+    .grid-row-start{
+        grid-column-start: auto;
+    }
+    section.services .card-wrapper .card img {
+        width:15%;
+    }
+    .hero .right h6{
+        font-size: 1rem;
+    }
+    .hero .right h1{
+        font-size: 2rem;
+    }
+    .hamberger .container-hamberger .stripe {
+        width: 30px;
+        height:4px;
+    }
+    .hero .right{
+        margin-top: -2rem;
+    }
+    section.about .about-me-img{
+        width:92%;
+    }
+    section.about .about-me-right{
+        text-align: justify;
+    }
+}
+@media (max-width: 1267){
+    
+}
+@media (max-width: 1267){
+    
+}
 

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>My Awesome Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">  
@@ -12,9 +12,9 @@
     <div class='site-main-wrapper'>
         <button class='hamberger'>
             <div class= 'container-hamberger'>
-                <div class='strip1'></div>
-                <div class='strip2'></div>
-                <div class='strip3'></div>
+                <div class='stripe'></div>
+                <div class='stripe'></div>
+                <div class='stripe'></div>
             </div>
         </button>
         <div class='mobile-nav'>
@@ -22,12 +22,13 @@
                     <div class='cross-1'></div>
                     <div class='cross-2'></div>
                 </div> -->
+                
+            <ul class='list'>
                 <button class='times'><img src='./Images/times-logo2.png' alt='times-logo' /></button>
-            <ul>
                 <li><a href='#'>Home</a></li>
-                <li><a href='#'>About</a></li>
-                <li><a href='#'>Skills</a></li>
-                <li><a href='#'>Projects</a></li>
+                <li><a href='#about'>About</a></li>
+                <li><a href='#skills'>Skills</a></li>
+                <li><a href='#projects'>Projects</a></li>
                 <!-- <li><a href='#'>Blog</a></li> -->
             </ul>
         </div>
@@ -36,9 +37,9 @@
                 <nav id='main-nav' class='flex items-center justify-between'>
                     <div class='left flex items-center'>
                         <div class='branding'>
-                            <img src='./Images/logo.svg' alt='logo' /> 
+                            <img src='./Images/Sriya-logo.png' alt='logo' /> 
                         </div>
-                        <div>
+                        <div class='tab-list'>
                             <a href='#'>Home</a>
                             <a href='#about'>About</a>
                             <a href='#skills'>Skills</a>
@@ -73,10 +74,10 @@
                     <img class='about-me-img' src='Images/srmg.png' alt='image3'>
     
                 </div>
-                <div class='flex-1'>
+                <div class='about-me-right flex-1'>
                     <h1>About<span> Me</span></h1>
                     <h3>Hello! I'm Sriya.</h3>
-                    <p>Learn from yesterday, live for today, hope for tomorrow. The important thing is not to stop questioning. It is not enough that we build products that function, that are understandable and usable, we also need to build products that bring joy and excitement, pleasure and fun, and, yes, beauty to people’s lives.</p>
+                    <p>Learn from yesterday, live for today, hope for tomorrow. The important thing is not to stop questioning. It is not enough that i build products that function, that are understandable and usable, i also need to build products that bring joy and excitement, pleasure and fun, and, yes, beauty to people’s lives.</p>
                     <div class='social'>
                         <a href='https://github.com/sriyaT'><img src='Images/github-logo.png' /></a>
                         <a href='https://twitter.com/t_sriya94'><img src='Images/twitter-logo.png' /></a>
@@ -126,7 +127,7 @@
         <section class='project-list'>
             <div class='container'>
                 <h3>Burger Ecommerce Application : <a href='https://sriyat.github.io/burger-app/' target="_blank">https://sriyat.github.io/burger-app/</a></h3>
-                <h3>State Management Application : <a href='' target="_blank"></a></h3>
+                <h3>State Management Application : <a href='https://sriyat.github.io/state-management/' target="_blank">https://sriyat.github.io/state-management/</a></h3>
                 <h3>Expense Tracker Application :  <a href='https://sriyat.github.io/expense-tracker-react/' target="_blank">https://sriyat.github.io/expense-tracker-react/</a></h3>
                 <h3>Carousel Application :  <a href='https://sriyat.github.io/Carousel/' target="_blank">https://sriyat.github.io/Carousel/</a></h3>
                 <h3>Move Container Application :  <a href='https://sriyat.github.io/move-container/' target="_blank">https://sriyat.github.io/move-container/</a></h3>
@@ -168,27 +169,27 @@
                 <div class='card-wrapper'>
                     <div class="card">
                         <img src='/Images/mobile-logo.png' alt='mobile'> 
-                        <h2>Call Me On</h2>
+                        <h2>Call On</h2>
                         <h6>+918088728655</h6>
                     </div>
                     <div class="card">
                         <img src='/Images/email.png' alt='email'> 
-                        <h2>Email Me At</h2>
+                        <h2>Email At</h2>
                         <h6>tsriya6@gmail.com</h6>
                     </div>
                     <div class="card">
                         <img src='/Images/twitter-logo.png' alt='twitter'> 
-                        <h2>Tweet Me At</h2>
+                        <h2>Tweet At</h2>
                         <h6>https://twitter.com/t_sriya94</h6>
                     </div>
                     <div class="card">
                         <img src='/Images/github-logo.png' alt='github'> 
-                        <h2>Visit My Github Account</h2>
+                        <h2>Visit Github Account</h2>
                         <h6>https://github.com/sriyaT</h6>
                     </div>
                     <div class="card">
                         <img src='/Images/linkedin-icon-19.png' alt='linkedin'> 
-                        <h2>Available on linkedin</h2>
+                        <h2>Available On Linkedin</h2>
                         <h6>https://www.linkedin.com/in/t-sriya-b4234510a</h6>
                     </div>
                     
@@ -198,8 +199,7 @@
         
     </body>
     </div>
-    
+    <script src="./js/app.js"></script>  
 </body>
-<script src="./js/app.js"></script>
 <!-- Website without visitors is like a ship lost in the horizon. -->
 </html>
